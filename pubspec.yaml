@@ -26,10 +26,6 @@ dependencies:
 
   cloud_firestore: ^0.13.5
   flutter_bloc: ^7.0.1
-<<<<<<< HEAD
-=======
-  
->>>>>>> 11d14fbf312889aaf1f316bb2a53c3711dc15beb
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
