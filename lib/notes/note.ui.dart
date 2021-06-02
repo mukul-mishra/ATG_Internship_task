@@ -66,7 +66,11 @@ class _NotesUiState extends State<NotesUi> {
                             InkWell(
                               child: ListTile(
                                 title: Text(e[index].title),
-                                subtitle: Text(e[index].description),
+                                subtitle: Text(
+                                  e[index].description,
+                                  overflow: TextOverflow.ellipsis,
+                                  maxLines: 2,
+                                ),
                               ),
                               onTap: () {
                                 noteBloc.add(
@@ -77,7 +81,7 @@ class _NotesUiState extends State<NotesUi> {
                                 onPressed: () {
                                   noteBloc.add(RemoveNoteEvent(e[index]));
                                   //noteBloc.add(GetNotesEvent());
-                                  print(e[index].time);
+                                  //print(e[index].time);
                                 },
                                 child: Text("remove"))
                           ],
@@ -117,7 +121,11 @@ class _NotesUiState extends State<NotesUi> {
                             InkWell(
                               child: ListTile(
                                 title: Text(d[index].title),
-                                subtitle: Text(d[index].description),
+                                subtitle: Text(
+                                  d[index].description,
+                                  overflow: TextOverflow.ellipsis,
+                                  maxLines: 2,
+                                ),
                               ),
                             ),
                             ElevatedButton(

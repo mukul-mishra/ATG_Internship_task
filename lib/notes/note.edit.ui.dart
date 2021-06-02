@@ -51,6 +51,8 @@ class _NotesEditUiState extends State<NotesEditUi> {
               controller: titleController,
             ),
             TextFormField(
+              keyboardType: TextInputType.multiline,
+              maxLines: null,
               decoration: InputDecoration(
                 hintText: "Enter description",
                 alignLabelWithHint: true,
@@ -72,7 +74,7 @@ class _NotesEditUiState extends State<NotesEditUi> {
                       },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Text('Add'),
+                        child: Text('Update'),
                       ),
                     );
                 }),
